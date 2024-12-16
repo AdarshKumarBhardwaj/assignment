@@ -110,7 +110,7 @@ int evaluate_expression(const char *expression, int *error)
 int main()
 {
     char input[100];
-    printf("Enter the expression for calculation: ");
+    printf("Enter the expressions for calculation: ");
     fgets(input, sizeof(input), stdin);
 
     int error = 0;
