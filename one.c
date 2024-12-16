@@ -112,7 +112,6 @@ int main()
     char input[100];
     printf("Enter the expression for calculation: ");
     fgets(input, sizeof(input), stdin);
-    input[strcspn(input, "\n")] = 0;
 
     int error = 0;
     int result = evaluate_expression(input, &error);
