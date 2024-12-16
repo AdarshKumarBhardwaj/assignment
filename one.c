@@ -110,16 +110,15 @@ int evaluate_expression(const char *expression, int *error)
 int main()
 {
     char input[100];
-    printf("Enter the expression for calculation: ");
+    printf("Enter the expressions for calculation: ");
     fgets(input, sizeof(input), stdin);
-    input[strcspn(input, "\n")] = 0;
 
     int error = 0;
     int result = evaluate_expression(input, &error);
 
     if (error)
     {
-        printf("Error: Invalid expression.\n");
+        printf("Error: Invalid expressions.\n");
     }
     else
     {
