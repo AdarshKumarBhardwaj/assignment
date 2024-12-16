@@ -118,7 +118,7 @@ int main()
 
     if (error)
     {
-        printf("Error: Invalid expression.\n");
+        printf("Error: Invalid expressions.\n");
     }
     else
     {
